@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/e674bba739.js" crossorigin="anonymous"></script>
+	<title>Projects</title>
+</head>
+	
+	<style type="text/css">
+		
+		@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Source+Code+Pro:wght@200;300;400;500;600;700;800;900&display=swap");
+
+		
+	* {
+			margin: 0;
+			padding: 0;	
+			font-family: "Raleway", sans-serif;
+            font-family: "Source Code Pro", monospace;	  
+			background-color: #2d2e32 ;
+        }
+
+        :root {
+		
+	   --header-background: #fff;
+		--black: #192a56;
+		--light-color:#666;
+		--green:#27ae60;
+		--dishes-color: #eee;
+		--dropdown-content-background: #f1f1f1;	
+	   --box-shadow:0 0 10px 1px #00000040;;
+
+	}
+        
+        html{
+        	scroll-behavior: smooth;
+        }
+
+        ::-webkit-scrollbar{
+
+        	width: 10px;
+        }        
+
+        ::-webkit-scrollbar-thumb{
+ 
+		   background: #CACACA;		   
+		   border-radius: 15px;
+		}
+
+        header{
+        	display: flex;
+        	justify-content: space-between;
+        	align-items: center;       
+            border: 1px solid #2d2e3240;
+            box-shadow: 0 0 10px 1px #00000040;
+            color: #fefefe;
+            padding: 20px 40px;
+            backdrop-filter: blur(15px);
+            position: sticky;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            margin: 0;
+        }
+
+		.navbar-title, .navbar-menu, .social-media{
+
+			display: flex;
+			justify-content: space-between;
+			background-color: transparent;
+		}
+
+		.title-first-name {
+
+			padding: 0px 7px .5px;			
+			color: #fefefe;
+			font-size: 24px;
+			font-family: "Raleway", sans-serif;		
+			
+		}
+
+		.title-last-name {
+  			
+  			font-size: 24px;
+  			font-weight: 400;
+  			color: #cacaca;
+  			font-family: "Raleway", sans-serif;
+		}
+
+		.navbar-menu a{
+		
+			font-size: 12px;
+			color: #fefefe;		
+			padding: 0px 20px;		
+			text-decoration: none;
+			transition: 0.3s ease;
+		}
+
+		.navbar-menu .active {
+         
+            color: #64f4ac;
+            font-weight: 900;
+        }
+
+        .navbar-menu a:hover{
+
+        	color: #64f4ac;
+            font-weight: 900;
+        }
+
+
+        .social-media li {
+            display: flex;
+            padding: 0 16px;
+            align-items: center;
+            list-style: none;
+
+        }
+
+        .social-media li i {
+            font-size: 14px;
+            transition: 0.3s ease;
+
+        }
+
+        .social-media li a {
+            color: #fefefe;
+            text-decoration: none;
+            padding: 0 5px;
+            font-size: 12px;
+            transition: 0.3s ease;
+
+        }
+
+        .head{
+
+        	display: flex;
+        	justify-content: center;        
+        	margin-top: 25px;
+        	color: ghostwhite;
+        	
+        }
+
+
+
+
+    .box-container {
+
+		
+		margin-bottom: 10px;		
+		padding: 50px;		
+
+	    display: grid;
+	    grid-template-columns: repeat(3, 1fr);
+	    gap: 10px;	    	    
+	    
+	}
+
+	.box-container .box{
+
+		padding:10px;
+		background: #fff ;
+		border-radius: 5px;
+		border: .1rem solid rgba(0, 0, 0, .2);
+		box-shadow: var(--box-shadow);
+		text-align: center;	
+		cursor: pointer;	
+
+	}
+
+	
+
+ .box-container .box h3{
+
+	    color: var(--black);
+		font-size: 20px ;
+		margin-top: 8px;
+		margin-bottom: 10px;
+		background-color: transparent;
+	} 
+
+
+	.btn {
+	  margin-top: 10px;
+	  display: inline-block;
+	  background-color: var(--black);
+	  color: #fff;
+	  padding: 10px 0px;
+	  font-size: 15px;
+	  border-radius: 5px;
+	  text-align: center; 
+	  text-decoration: none;
+	  width: 65%;
+	  border: none;
+	  cursor: pointer;
+	  margin-bottom: 5px;
+	}	
+
+	.box:hover .btn{
+		
+		background-color: var(--green);
+	}
+
+	
+
+
+	</style>
+
+<body>
+
+	<header>
+
+	        <div class="navbar-title">
+
+	    
+
+	            <h3 class="title-first-name"> Ali </h3>
+	            <h3 class="title-last-name">Hassan</h3>
+
+	    
+
+	        </div>
+
+
+	        <div class="navbar-menu">
+
+	           
+	                <a class="active" href="index.html">&lt; About Me &gt;</a>
+	                <a class="" href="projects.html">Projects</a>	                
+	                <a class="" href="index.html#education">Education</a>
+	                <a class="" href="./assets/cv.pdf">Resume</a>
+	                <a class="" href="./index.html#contact">Hire Me</a>
+	           
+
+	        </div>
+
+
+	        <div>
+
+	            <ul class="social-media">
+
+	                <li>
+	                    <i class="fa-brands fa-linkedin-in"></i>
+	                    <a href="https://www.linkedin.com/in/ali-hassan-168446211/" target="_blank">LinkedIn</a>
+	                </li>
+	                
+
+	                <li>
+	                    <i class="fa-regular fa-envelope"></i>
+	                    <a href="mailto:mrkhan111243@gmail.com">Email</a>
+	                </li>
+	                
+	            </ul>
+	        </div>
+    </header>
+
+
+    <section>
+    	
+    	<h2 class="head">Some Things I've Built</h2>
+
+
+
+    <div class="box-container">
+
+
+
+    	 <div class='box'>
+
+			    <img src="./projects/food_ordering_system/1.png" height="200px">
+			    <h3>Food Ordering System</h3>
+			
+			    <a href="./projects/food_ordering_system/food_system.html" class="btn">Know More</a>
+		</div>
+
+		
+
+		
+
+		
+
+		
+
+		
+
+			
+
+		
+
+	</div>
+
+    </section>
+
+
+</body>
+</html>

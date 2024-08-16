@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/e674bba739.js" crossorigin="anonymous"></script>
+	<title>Projects</title>
+</head>
+	
+	<style type="text/css">
+		
+		@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Source+Code+Pro:wght@200;300;400;500;600;700;800;900&display=swap");
+
+		
+	* {
+			margin: 0;
+			padding: 0;	
+			font-family: "Raleway", sans-serif;
+            font-family: "Source Code Pro", monospace;	  
+			background-color: #2d2e32 ;
+        }
+
+        :root {
+		
+	   --header-background: #fff;
+		--black: #192a56;
+		--light-color:#666;
+		--green:#27ae60;
+		--dishes-color: #eee;
+		--dropdown-content-background: #f1f1f1;	
+	   --box-shadow:0 0 10px 1px #00000040;;
+
+	}
+        
+        html{
+        	scroll-behavior: smooth;
+        }
+
+        ::-webkit-scrollbar{
+
+        	width: 10px;
+        }        
+
+        ::-webkit-scrollbar-thumb{
+ 
+		   background: #CACACA;		   
+		   border-radius: 15px;
+		}
+
+        header{
+        	display: flex;
+        	justify-content: space-between;
+        	align-items: center;       
+            border: 1px solid #2d2e3240;
+            box-shadow: 0 0 10px 1px #00000040;
+            color: #fefefe;
+            padding: 20px 40px;
+            backdrop-filter: blur(15px);
+            position: sticky;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            margin: 0;
+        }
+
+		.navbar-title, .navbar-menu, .social-media{
+
+			display: flex;
+			justify-content: space-between;
+			background-color: transparent;
+		}
+
+		.title-first-name {
+
+			padding: 0px 7px .5px;			
+			color: #fefefe;
+			font-size: 24px;
+			font-family: "Raleway", sans-serif;		
+			
+		}
+
+		.title-last-name {
+  			
+  			font-size: 24px;
+  			font-weight: 400;
+  			color: #cacaca;
+  			font-family: "Raleway", sans-serif;
+		}
+
+		.navbar-menu a{
+		
+			font-size: 12px;
+			color: #fefefe;		
+			padding: 0px 20px;		
+			text-decoration: none;
+			transition: 0.3s ease;
+		}
+
+		.navbar-menu .active {
+         
+            color: #64f4ac;
+            font-weight: 900;
+        }
+
+        .navbar-menu a:hover{
+
+        	color: #64f4ac;
+            font-weight: 900;
+        }
+
+
+        .social-media li {
+            display: flex;
+            padding: 0 16px;
+            align-items: center;
+            list-style: none;
+
+        }
+
+        .social-media li i {
+            font-size: 14px;
+            transition: 0.3s ease;
+
+        }
+
+        .social-media li a {
+            color: #fefefe;
+            text-decoration: none;
+            padding: 0 5px;
+            font-size: 12px;
+            transition: 0.3s ease;
+
+        }
+
+
+
+
+        .home{        	
+		    display: flex;
+		    justify-content: space-around;
+		    align-items: center;
+		    padding: 45px;
+
+		    	
+        }       
+
+
+        .home-img{
+        	
+        	  box-shadow: 0 0 10px 1px #00000040;       
+
+        }
+
+         .download-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #27ae60;
+            color: #fefefe;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            display: none;
+            text-decoration: none;
+        }
+
+        .home-img:hover .download-button {
+            display: block;
+        }
+
+
+		.home-img:hover img {
+			opacity: 0.9;
+			filter: blur(1px);
+		}
+
+
+
+	    .introduction {	       
+		   display: flex;		  
+		   padding: 130px;
+		  /* background-color: #25262a;*/
+
+		   
+		  
+		} 
+
+        .tab-information{
+
+        	display: block;
+            min-width: 100%;
+            padding-right: 35px;
+            margin-top: -65px;
+            background-color: transparent;
+
+            
+           
+        }
+
+        .tab-information .intro{
+
+            font-size: 15px;
+            margin-bottom: 7px;
+          /*  color: #7c7d81;*/
+            font-weight: 800;
+            background-color: transparent;
+            color: var(--green);
+
+        }
+        
+
+        .tab-information h4 {
+ 
+            font-size: 25px;
+            font-style: italic;
+            margin-bottom: 20px;
+            color: #fefefe;
+          	background-color: transparent;
+        }
+
+        .introduction-text p {
+  
+           font-size: 18px;
+           color: #7c7d81;
+           font-weight: 600;
+           line-height: 25px;
+           background-color: transparent;
+        }       
+
+
+        .tech{
+
+        	background-color: transparent;
+        	display: inline-block;
+        	font-size: 25px;
+        	border: 1px solid;
+        	padding: 5px 13px;
+        	margin: 10px 0px ;
+        	margin-bottom: 15px;
+        	background-color: var(--green);
+        	color: ghostwhite;
+        	border: none;
+        	cursor: pointer;
+        }
+
+</style>
+
+<body>
+
+	<header>
+
+	        <div class="navbar-title">
+
+	    
+
+	            <h3 class="title-first-name"> Ali </h3>
+	            <h3 class="title-last-name">Hassan</h3>
+
+	    
+
+	        </div>
+
+
+	        <div class="navbar-menu">
+
+	           
+	                <a class="active" href="../../index.php">&lt; About Me &gt;</a>
+	                <a class="" href="../../projects.php">Projects</a>	                
+	                <a class="" href="../../index.php#education">Education</a>
+	                <a class="" href="../../assets/cv.pdf">Resume</a>
+	                <a class="" href="../../index.php#contact">Hire Me</a>
+	           
+
+	        </div>
+
+
+	        <div>
+
+	            <ul class="social-media">
+
+	                <li>
+	                    <i class="fa-brands fa-linkedin-in"></i>
+	                    <a href="https://www.linkedin.com/in/ali-hassan-168446211/" target="_blank">LinkedIn</a>
+	                </li>
+	                
+
+	                <li>
+	                    <i class="fa-regular fa-envelope"></i>
+	                    <a href="mailto:mrkhan111243@gmail.com">Email</a>
+	                </li>
+	                
+	            </ul>
+	        </div>
+    </header>
+
+
+    <div class="home">
+
+	    <div class="home-img">
+
+	        <img src="1.png" height="480px" alt="Food Image">
+	        <abbr title="Click for more project images">
+	        <a href="food.pdf" class="download-button" >SHOW MORE</a>
+	        </abbr>
+	    
+	    </div>
+
+	</div>
+  
+
+
+
+    <section class="introduction">
+
+    	
+    	<div class="tab-information">
+
+
+    		<div id="introduction-text-1" class="introduction-text">
+
+               <p class="intro">Description</p>
+               
+               <h4>Online Food Ordering System</h4>
+
+               <p>The food ordering system allows users to browse through various food categories, select their favorite dishes, place orders, and manage their accounts. It includes both user and admin panels to ensure efficient management and a seamless user experience.</p> 
+               
+
+
+            </div>                      
+    		
+    	</div> 
+
+    </section>
+
+
+    <section class="introduction">
+
+    	
+    	<div class="tab-information">
+    		
+
+               <p class="intro">Technologies</p>
+               
+               <h4>Programming Languages</h4>
+
+               <p class="languages">
+               
+               	<li class="tech">HTML</li>
+               	<li class="tech">CSS</li>
+               	<li class="tech">JS</li> 
+               	<li class="tech">AJAX</li>
+               	<li class="tech">PHP</li>  
+               	<li class="tech">SQL</li>                	
+               	
+               </p>
+
+
+
+                <h4>Tools</h4>
+
+                <p class="languages">
+               
+               	<li class="tech">MySQL</li>             
+               	<li class="tech">Sublime</li> 
+               	<li class="tech">XAMPP</li>                	
+               	
+               </p>
+
+                                 
+    		
+    	</div> 
+
+    </section>
+
+
+  
+
+
+</body>
+</html>
