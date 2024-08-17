@@ -15,8 +15,9 @@
 			margin: 0;
 			padding: 0;	
 			font-family: "Raleway", sans-serif;
-      font-family: "Source Code Pro", monospace;	  
+            font-family: "Source Code Pro", monospace;	  
 			background-color: #2d2e32 ;
+
         }
         
         html{
@@ -41,7 +42,7 @@
             border: 1px solid #2d2e3240;
             box-shadow: 0 0 10px 1px #00000040;
             color: #fefefe;
-            padding: 20px 40px;
+            padding: 20px 55px;
             backdrop-filter: blur(15px);
             position: sticky;
             z-index: 1;
@@ -61,14 +62,14 @@
 
 			padding: 0px 7px .5px;			
 			color: #fefefe;
-			font-size: 24px;
+			font-size: 25px;
 			font-family: "Raleway", sans-serif;		
 			
 		}
 
 		.title-last-name {
   			
-  			font-size: 24px;
+  			font-size: 25px;
   			font-weight: 400;
   			color: #cacaca;
   			font-family: "Raleway", sans-serif;
@@ -76,7 +77,7 @@
 
 		.navbar-menu a{
 		
-			font-size: 12px;
+			font-size: 13px;
 			color: #fefefe;		
 			padding: 0px 20px;		
 			text-decoration: none;
@@ -105,7 +106,7 @@
         }
 
         .social-media li i {
-            font-size: 14px;
+            font-size: 15px;
             transition: 0.3s ease;
 
         }
@@ -114,7 +115,7 @@
             color: #fefefe;
             text-decoration: none;
             padding: 0 5px;
-            font-size: 12px;
+            font-size: 13px;
             transition: 0.3s ease;
 
         }
@@ -152,17 +153,25 @@
 
 		.home-title h1{
 
-           font-size: 38px;
-           line-height: 50px;
+           font-size: 38px;          
            letter-spacing: 1.5px;
            padding: 35px 0 0 0;
            color: #fefefe;
            font-family: "Source Code Pro", monospace;
         }
 
+      /*  .home-title h3{
+
+           font-size: 28px;         
+           letter-spacing: 1.5px;
+           padding: 35px 0 0 0;
+           color: #fefefe;
+           font-family: "Source Code Pro", monospace;
+        }*/
+
         .home-title p{
 
-           font-size: 12px;
+           font-size: 15px;
            padding: 20px 0;
            color: #cacaca;
            font-weight: 500;
@@ -208,8 +217,7 @@
         	  box-shadow: 0 0 10px 1px #00000040;
         
 
-        }
-       
+        }     
 
 
 
@@ -220,8 +228,7 @@
 		   justify-content: space-around;
 		   align-items: center;
 		   padding: 130px;
-		   background-color: #25262a;
-		  
+		   background-color: #25262a;		  
 		}
 
 	    .tab{
@@ -247,37 +254,18 @@
 	    .tab-card:hover {
            box-shadow: 0 0 15px #00000080;
            cursor: pointer;
-        }
+        }       
 
-        .tab-card.active {
-           background-color: #00b840;
-        }
-
-        .tab-card.active p {
-           color: #000000;
-           font-weight: 700;
-           background-color: transparent;
-
-        }
-
-        .tab-card.active h3 , a {
-     
-           background-color: transparent;
-
-        }
-
+        
         .tab-card h3 {
            font-weight: 500;
            color: #fefefe;
            margin-top: 15px;
            margin-left: 15px ;
+           background-color: transparent;
 
         }
-
-        .tab-card:hover h3{
-
-    	   color: #64f4ac;;
-        }    
+      
 
         .tab-card p{
 
@@ -285,8 +273,9 @@
            margin-top: 15px;
            margin-left: 15px;
            margin-bottom: 15px;
-           font-size: 14px;       
+           font-size: 15px;       
            color: #7c7d81;
+           background-color: transparent;
 
         }
 
@@ -295,6 +284,7 @@
            text-decoration: none;
            transition: 0.3s ease;       
            margin-left: 15px ;
+           background-color: transparent;
         }
 
         .tab-card:hover a {
@@ -302,7 +292,6 @@
            text-decoration: underline;
            text-underline-offset: 5px;
         }
-
 
 
         .tab-information{
@@ -334,7 +323,7 @@
 
         .tab-information h4 {
  
-            font-size: 26px;
+            font-size: 25px;
             font-style: italic;
             margin-bottom: 20px;
             color: #fefefe;
@@ -348,12 +337,17 @@
            font-weight: 600;
            line-height: 25px;
            background-color: transparent;
+           text-align: justify;
         }
 
         .introduction-text{
 
         	background-color: transparent;
         }
+
+
+
+
 
 
 
@@ -765,13 +759,15 @@
 
     		  <div class="developer-intro">
                 <p>Full-Stack Web Developer</p>
-                <p>Android Developer</p>
+                <!-- <p>Android Developer</p> -->
               </div>
 
               <div class="home-title">
                
-                <h1>Full Stack Web Developer: Coding<br>and Designing Magic</h1>
-                <p>I design and code beautifully simple things,<br>and I love what I do.</p>
+                <h1>Full Stack Web Developer</h1>
+                <p>"Shaping the web with both front-end finesse and <br> back-end brilliance."</p>
+               <!--  <h3>Weaving code into seamless digital experiences</h3>  -->
+              <!--   <p>I design and code beautifully simple things,<br>and I love what I do.</p> -->
                 <a href="#contact">LET'S CHAT!</a>
 
               </div>
@@ -802,30 +798,22 @@
 
 
     	<div class="tab">
+            
 
-
-            <div class="tab-card active" onclick="show_1()">
-              
-                <h3>Android Application Development</h3>
-                <p>Building apps that bring the world to your fingertips</p>
-                <a href="">3 PROJECTS</a>
-
-            </div>
-
-            <div class="tab-card" onclick="show_2()">
+            <div class="tab-card" id="tab-card-1" onmouseover ="show_1()">
              
                 <h3>Frontend Development</h3>
-                <p>Crafting the visual journey, making every click <br> a pleasure</p>
-                <a href="projects.php">12 PROJECTS</a>
+                <p id="card-p1">Crafting the visual journey, making every click <br> a pleasure</p>
+                <a href="projects.html">12 PROJECTS</a>
 
             </div>
 
-            <div id="tab-card-3" class="tab-card" onclick="show_3()">
+            <div class="tab-card" id="tab-card-2"  onmouseover ="show_2()">
 
               
                 <h3>Backend Development</h3>
-                <p>Engineering the unseen backbone for a seamless digital experience.</p>
-                <a href="projects.php">5 PROJECTS</a>
+                <p id="card-p2">Engineering the unseen backbone for a seamless digital experience.</p>
+                <a href="projects.html">5 PROJECTS</a>
 
             </div>
         
@@ -836,19 +824,10 @@
 
     	<div class="tab-information">
 
+    		
 
 
-    		<div id="introduction-text-1" class="introduction-text">
-
-               <p class="intro">Introduction</p>
-               <h2>I'm Ali Hassan</h2>
-               <h4>Crafting Apps that Bring the World to Your Fingertips</h4>
-               <p>As an Android developer, I specialize in creating mobile applications that are intuitive and user-friendly. Leveraging my expertise in Kotlin and XML, I design and build apps that provide seamless, engaging experiences, ensuring users have powerful tools at their fingertips.</p>
-
-            </div> 
-
-
-            <div id="introduction-text-2" class="introduction-text"  style="display: none;">
+            <div id="introduction-text-1" class="introduction-text">
 
                <p class="intro">Introduction</p>
                <h2>I'm Ali Hassan</h2>
@@ -858,7 +837,7 @@
             </div> 
 
 
-            <div id="introduction-text-3" class="introduction-text" style="display: none;">
+            <div id="introduction-text-2" class="introduction-text" style="display: none;">
 	       
 
                <p class="intro">Introduction</p>
@@ -872,7 +851,7 @@
     </section>
 
 
-
+<!-- 
     <section class="projects" id="projects">
 
     	<div class="left-project">
@@ -963,10 +942,9 @@
 
             <h2>Education</h2>          
 
-        </div> 
+        </div>
 
-
-    	<!-- <div class="education-card" style="border: 2px solid;"> -->
+    	
 
 
             <div class="tab-card">
@@ -1014,8 +992,7 @@
             </div>
         
     		
-   <!--  	</div> -->
-
+  
    
 </section>
 
@@ -1061,7 +1038,7 @@
 </section> 
 
 
-
+ -->
       
 
   
@@ -1069,29 +1046,36 @@
 
   <script type="text/javascript">
 
+
   	 function show_1() {
 
-  	 	document.getElementById('introduction-text-1').style.display = 'block';
+  	 		 
+  	 	document.getElementById('introduction-text-1').style.display = 'block';  	 
   	 	document.getElementById('introduction-text-2').style.display = 'none';
-  	 	document.getElementById('introduction-text-3').style.display = 'none';  	 	
 
-  	 }  	
-  		
 
-  	 function show_2() {
+        document.getElementById('tab-card-1').style.backgroundColor = 'green';
+        document.getElementById('card-p1').style.color = 'black';   
 
-  	 	document.getElementById('introduction-text-1').style.display = 'none';  	 
-  	 	document.getElementById('introduction-text-2').style.display = 'block';  	 
-  	 	document.getElementById('introduction-text-3').style.display = 'none'; 
+
+        document.getElementById('tab-card-2').style.backgroundColor = '';
+        document.getElementById('card-p2').style.color = '';  
   	 		 	
 
   	 }
 
-  	 function show_3() {
+  	 function show_2() {
 
-  	 	document.getElementById('introduction-text-1').style.display = 'none';
-  	 	document.getElementById('introduction-text-2').style.display = 'none';  
-  	 	document.getElementById('introduction-text-3').style.display = 'block'; 
+  	 	
+  	 	document.getElementById('introduction-text-1').style.display = 'none';  
+  	 	document.getElementById('introduction-text-2').style.display = 'block';
+
+  	 	document.getElementById('tab-card-1').style.backgroundColor = '';
+        document.getElementById('card-p1').style.color = ''; 
+
+
+        document.getElementById('tab-card-2').style.backgroundColor = 'green';
+        document.getElementById('card-p2').style.color = 'black'; 
   	    
   	 }
 
