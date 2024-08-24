@@ -228,31 +228,22 @@
 
 @media only screen and (max-width: 768px) {
 
-
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 15px;
-		
+	.navbar-menu, .social-media {
+        display: none;
     }
 
-	#burger{
-
-		display: block;
-	}
-
-    /* .navbar-title, .navbar-menu, .social-media {
-        flex-direction: column;
-        align-items: flex-start;
+    .title-last-name {
+        display: none;
     }
 
-    .navbar-menu a {
-        padding: 5px 0;
-        font-size: 14px;
-    } */
+    #burger {
+        display: block; 
+        font-size: 24px;
+    } 
+	
 
     .box-container {
-        grid-template-columns: 1fr; /* Stack boxes on small screens */
+        grid-template-columns: 1fr; 
     }
 
     .box-container .box {
@@ -260,7 +251,7 @@
     }
 
     .btn {
-        width: 100%; /* Full width button on small screens */
+        width: 100%; 
     }
 }
 
