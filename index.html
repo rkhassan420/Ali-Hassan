@@ -127,10 +127,10 @@
 
 		#burger{
 
-display: none;
-font-size: 20px;
-cursor: pointer;
-}
+			display: none;
+			font-size: 20px;
+			cursor: pointer;
+		}
 
 
 
@@ -141,6 +141,11 @@ cursor: pointer;
 		    padding: 80px 10px;	
 
         }
+
+		.home-content{
+
+			border: 1px solid;
+		}
 
 
         .developer-intro{
@@ -219,13 +224,15 @@ cursor: pointer;
         }
 
 
-        .home-img{
+        .home-img{        	
+        	  box-shadow: 0 0 10px 1px #00000040;       
 
-        	
-        	  box-shadow: 0 0 10px 1px #00000040;
-        
+        }    
+		
+		.home-img #homeImg{
 
-        }     
+			height: 380px;
+		}
 
 
 
@@ -628,21 +635,72 @@ cursor: pointer;
 
 
 		@media only screen and (max-width: 1200px) {
-
 			   
 
-    .navbar-menu a {
-        padding: 0px 15px;
-        font-size: 12px;
-    }
+		.navbar-menu a {
+			padding: 0px 15px;
+			font-size: 12px;
+		}
 
-    .social-media li {
-        padding: 0 10px;
-    }
+		.social-media li {
+			padding: 0 10px;
+		}
 
-    .social-media li a {
-        font-size: 10px;
-    }
+		.social-media li a {
+			font-size: 10px;
+		} 	
+		
+		.home-content{
+
+			border: 1px solid;
+			padding-left: 50px;
+			}
+		
+
+		.home-title h1{
+
+           font-size: 30px;         
+        }
+     
+
+        .home-title p{
+
+           font-size: 13px;     
+          
+        }
+
+        .home-title a{
+        
+        	
+        	font-size: 14px;
+           
+        }
+
+        .home-tail{
+
+      		display: flex;      		
+  			align-items: center;
+  			padding: 100px 0 0 0;  			
+        }
+
+         .home-tail h1{
+         	font-size: 40px;
+         }        
+
+        .home-tail p{	    
+	      
+	       font-size: 14px;
+        }
+
+        .home-img #homeImg{
+
+           height: 250px;
+        }  
+
+
+
+
+
 	
 }
 
@@ -668,13 +726,7 @@ cursor: pointer;
 
 }
 
-@media only screen and (max-width: 480px) {
 
-    .navbar-title h3 {
-        font-size: 18px;
-    }
-
-   }
 
 
 
@@ -737,7 +789,7 @@ cursor: pointer;
 	            </ul>
 
 				<i class="fa-solid fa-bars" style="color: #e9eef1";  id="burger" ></i>
-				
+
 	        </div>
     </header>
 
@@ -773,7 +825,7 @@ cursor: pointer;
 
     	<div class="home-img">
 
-    		<img src="./assets/ali.png" height="380px">
+    		<img src="./assets/ali.png"  id="homeImg">
 
     	</div>
 
