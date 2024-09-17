@@ -156,8 +156,7 @@
 
 		
 		margin-bottom: 10px;		
-		padding: 50px;
-		
+		padding: 50px;		
 		
 
 	    display: grid;
@@ -220,32 +219,40 @@
 
 	
 
-	/* Add this to your existing CSS */
 
 @media only screen and (max-width: 1200px) {
+
+	header{
+		padding: 20px 55px;
+	}
+	
+
+	.navbar-menu, .social-media {
+        display: none;
+    }
+
+    .title-first-name, .title-last-name {
+        font-size: 20px;
+    }
+
+    #burger {
+        display: block; 
+        font-size: 24px;
+    } 
+
+
     .box-container {
         grid-template-columns: repeat(2, 1fr); 
     }
 
-    .navbar-menu a {
-        padding: 0px 15px;
-        font-size: 12px;
-    }
-
-    .social-media li {
-        padding: 0 10px;
-    }
-
-    .social-media li a {
-        font-size: 10px;
-    }
+   
 	
 }
 
 @media only screen and (max-width: 768px) {
 
 	header{
-		padding: 20px 35px;
+		padding: 20px 55px;
 	}
 	
 
