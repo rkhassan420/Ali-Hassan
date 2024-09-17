@@ -71,6 +71,11 @@
 			background-color: transparent;
 		}
 
+		.navbar-title a{
+			text-decoration: none;
+
+		}
+
 		.title-first-name {
 
 			padding: 0px 7px .5px;			
@@ -132,6 +137,14 @@
             transition: 0.3s ease;
 
         }
+
+
+        #burger{
+
+			display: none;
+			font-size: 20px;
+			cursor: pointer;
+		}
 
 
 
@@ -258,6 +271,202 @@
         	cursor: pointer;
         }
 
+        
+        
+           @media only screen and (max-width: 1200px) {
+
+		header{
+			padding: 20px 40px;
+		}		
+
+		.navbar-menu, .social-media {
+	        display: none;
+	    }
+
+	    .title-first-name, .title-last-name {
+	        font-size: 20px;
+	    }
+
+	   #burger {
+	        display: block; 
+	        font-size: 24px;
+	    } 
+
+	   .home{
+	   	    padding: 40px;
+	   }
+	
+}
+
+
+@media only screen and (max-width: 667px) {
+
+	.home-img img{
+
+		height: 370px;
+	}
+
+	.introduction {	       
+		   
+		padding: 100px;			   
+		  
+	} 
+
+	.tab-information h4 {
+ 
+        font-size: 16px;        
+        
+    } 
+
+    .introduction-text p {
+  
+        font-size: 16px;           
+        line-height: 22px;           
+    }  
+
+     .introduction-text ol{
+                	
+        font-size: 16px;
+        line-height: 22px;
+        
+    }
+
+    .link{
+
+    	font-size: 15px;
+    }
+
+    .tech{        	
+        
+        font-size: 17px;        	
+        padding: 4px 8px;	
+        	
+    } 	  
+
+	   
+
+}
+
+
+@media only screen and (max-width: 480px) {
+
+	.home-img img{
+
+		height: 355px;
+	}
+
+	.introduction {	       
+		   
+		padding: 90px 60px;			   
+		  
+	} 
+
+	.tab-information h4 {
+ 
+        font-size: 15px;        
+        
+    } 
+
+    .introduction-text p {
+  
+        font-size: 15px;           
+        line-height: 20px;           
+    }  
+
+     .introduction-text ol{
+                	
+        font-size: 15px;
+        line-height: 20px;
+        
+    }
+   
+
+    .tech{        	
+        
+        font-size: 16px;        	
+                	
+    } 
+
+
+}
+
+@media only screen and (max-width: 400px) {
+
+	.home-img img{
+
+		height: 340px;
+	}
+
+	.introduction {	       
+		   
+		padding: 90px 60px;			   
+		  
+	} 
+
+	.tab-information h4 {
+ 
+        font-size: 12px;        
+        
+    } 
+
+    .introduction-text p {
+  
+        font-size: 14px;           
+        line-height: 18px;           
+    }  
+
+     .introduction-text ol{
+                	
+        font-size: 14px;
+        line-height: 18px;
+        
+    }
+   
+
+    .tech{        	
+        
+        font-size: 11px;        	
+                	
+    } 
+
+}
+
+
+@media only screen and (max-width: 374px) {
+
+	.home-img img{
+
+		height: 330px;
+	}
+
+	.introduction {	       
+		   
+		padding: 80px 40px;			   
+		  
+	} 	
+
+    .introduction-text p {
+  
+        font-size: 12px;           
+        line-height: 18px;           
+    }  
+
+     .introduction-text ol{
+                	
+        font-size: 12px;
+        line-height: 18px;
+        
+    }
+   
+
+    .tech{        	
+        
+        font-size: 10px;        	
+                	
+    } 
+
+}
+
 </style>
 
 <body>
@@ -268,8 +477,8 @@
 
 	    
 
-	            <h3 class="title-first-name"> Ali </h3>
-	            <h3 class="title-last-name">Hassan</h3>
+	         <a href="../../index.html"><h3 class="title-first-name"> Ali </h3></a>
+	           <a href="../../index.html"><h3 class="title-last-name">Hassan</h3></a>
 
 	    
 
@@ -316,6 +525,7 @@
 	                </li>
 	                
 	            </ul>
+	             <i class="fa-solid fa-bars" style="color: #e9eef1";  id="burger" ></i>
 	        </div>
     </header>
 
