@@ -249,7 +249,7 @@
 		   display: flex;
 		   justify-content: space-around;
 		   align-items: center;
-		   padding: 130px 200px;
+		   padding: 140px 200px;
 		   background-color: #25262a;
 
 		  		  
@@ -269,7 +269,7 @@
 
 	       max-width: 80%;
 	       min-height: 140px;	
-	       padding: 4px;
+	       padding: 10px;
 	       margin-bottom: 10px;
 	       border-radius: 8px;
 	       box-shadow: 0 0 10px #00000040;
@@ -310,6 +310,7 @@
            text-decoration: none;
            transition: 0.3s ease;       
            margin-left: 15px ;
+           margin-bottom: 15px;
            background-color: transparent;
         }
 
@@ -376,12 +377,8 @@
 
 
 
-
-
-
-
        .projects {
-		   min-height: 80vh;
+		   min-height: 70vh;
 		   /* background-color: #25262a; */
 		   padding: 70px;
 		   display: flex;
@@ -389,162 +386,7 @@
 		  
 				   	 
 		}
-/*
-		.left-project {
 
-		   justify-content: space-between;
-		   display: flex;
-		   flex-direction: column;
-		   align-items: center;
-		   border-radius: 1px solid;
-		   width: 45%;
-		   background-color: transparent;
-
-		}
-
-		.projects-title h3 {
-		   font-size: 40px;
-		   color: #fff;
-		   font-weight: 500;
-		   margin: 0;
-
-		}
-
-		.projects-title p {
-		   font-size: 14px;
-		   color: #7c7d81;
-		   font-weight: 400;
-		   margin: 0;
-		}
-	
-		.project-card {
-		  min-width: 37vw;
-          min-height: 55vh;
-          max-height: 75vh;
-		  background-color: #2d3037;
-		  padding: 20px;
-		  border-radius: 15px;
-		  margin: 20px 0;
-		  overflow: hidden;
-
-		  background: linear-gradient(180deg, #16191e, #252628);
-		}
-
-		.project-card-1 {
-		  background: linear-gradient(180deg, #16191e, #252628);
-		}
-
-		.project-card .title {
-		  display: flex;
-		  flex-direction: row;
-		  justify-content: space-between;
-		  align-items: center;
-		  margin-bottom: 20px;
-		  background-color: transparent;
-		}
-
-		.project-card .title h3 {
-		  font-size: 30px;
-		  color: #fff;
-		  font-weight: 400;
-     	  background-color: transparent;
-		}
-
-		.project-card .title .tech-stack {
-		  display: flex;
-		  flex-direction: row;
-		  align-items: center;
-		  background-color: transparent;
-
-		}
-
-		.project-card .title .tech-stack p {
-		  font-size: 12px;
-		  background-color: #7c7d8180;
-		  color: #fff;
-		  margin: 0 5px;
-		  padding: 5px;
-		  border-radius: 3px;
-		  max-height: 25px;
-		}
-
-		.project-card .project-img-1 {
-		  height: 100vh;
-		  position: relative;
-		  top: 55px;
-		  left: 151px;
-		  object-fit: cover;
-		  border-radius:5px ;
-
-		}
-
-		.all-projects{
-
-			background-color: transparent;
-		}
-
-		
-		.all-projects a {
-		  color: #64f4ac;
-		  background-color: transparent;
-		}
-
-		.all-projects a h3 {
-		  font-size: 26px;
-		  background-color: transparent;
-		}
-
-		.all-projects p {
-		  font-size: 14px;
-		  color: #7c7d81;
-		  font-weight: 600;
-		  letter-spacing: -1px;
-		  line-height: 26px;
-		}
-
-
-		.project-card-2 {
-		  background: linear-gradient(225deg, #2c2940, #5a4073);
-
-		}
-
-		.project-card-3 {
-		  background: linear-gradient(225deg, #01403A, #025951);
-		}
-
-		.project-img-2 {
-		  width: 40vw;
-		  height: 42vh;
-		  background-color: transparent;
-		  object-fit: cover;
-		  object-position: top;
-		  position: relative;
-		  top: 38px;
-		  left: 60px;  
-		  border-radius: 10px;
-
-		  
-		}
-
-		.project-card:hover .project-img-2 {
-		  box-shadow: -20px 20px 20px #00000080;
-		}
-
-		.project-img-3 {
-		  width: 30vw;		  
-		  position: relative;
-		  top: 20px;
-		  left: 110px;
-		  border-radius: 10px;
-		  box-shadow: -5px -5px 10px #00000040;
-		  transition: 0.5s ease;
-		}
-
-		.project-card:hover .project-img-3 {
-		  box-shadow: -20px -20px 20px #00000040;
-		}
-
-*/
 
 		.education {
 		  height: 80vh;
@@ -649,98 +491,180 @@
 
 
 		@media only screen and (max-width: 1200px) {
-			   
 
-		.navbar-menu a {
-			padding: 0px 15px;
-			font-size: 12px;
+
+        header{
+
+			padding: 20px 55px;
 		}
 
-		.social-media li {
-			padding: 0 10px;
-		}
+		.navbar-menu, .social-media {
+       
+       		display: none;
+        }
 
-		.social-media li a {
-			font-size: 10px;
-		} 	
-		
+       .title-first-name, .title-last-name {
+         
+            font-size: 20px;
+        }
+
+        #burger {
+          
+            display: block; 
+            font-size: 24px;
+        }
+
+        .home{        	
+		    	
+		    padding: 70px 8px;	    	
+
+        }
+
 		.home-content{
 
-			border: 1px solid;
-			padding-left: 50px;
-			}
+			border: px solid;
+		}
+        
+
+        .developer-intro p {		
+			
+		    font-size: 12px;		
+			
+		}
 		
 
 		.home-title h1{
 
-           font-size: 30px;         
+           font-size: 35px;          
+           
         }
      
 
         .home-title p{
 
-           font-size: 13px;     
+           font-size: 13px;
           
         }
 
-        .home-title a{
-        
+        .home-title a{        
         	
-        	font-size: 14px;
-           
-        }
-
-        .home-tail{
-
-      		display: flex;      		
-  			align-items: center;
-  			padding: 100px 0 0 0;  			
+        	font-size: 15px;           
+            
         }
 
          .home-tail h1{
-         	font-size: 40px;
+         	font-size: 36px;
          }        
 
-        .home-tail p{	    
+        .home-tail p{    
 	      
-	       font-size: 14px;
+	       font-size: 13px;
+	       
         }
 
-        .home-img #homeImg{
+		
+		.home-img #homeImg{
 
-           height: 250px;
-        }  
-
-
-
+			height: 350px;
+		}
 
 
+	    .introduction {		   
+		   
+		   padding: 110px 100px;  
+		  		  
+		}
+
+	    .tab{		   
+		   
+	       min-width: 65%;
+
+	    }      
+
+
+        .tab-information{
+        	
+            min-width: 45%;
+            padding-right: 25px;
+            margin-left: -20px;          
+           
+        }       
+
+        .tab-information h2 {
+            
+            font-size: 25px;
+            
+        }
+
+        .tab-information h4 {
+ 
+            font-size: 22px;
+                       
+        }
+
+        .introduction-text p {
+  
+           font-size: 14px;
+           
+        }
+
+       .projects {
+
+		   min-height: 75vh;		  
+				   	 
+		}
+
+
+		.education {
+		  
+		  padding: 60px 100px;  
+
+		 
+		}		
+
+		.education-title h2 {
+		  
+		  font-size: 30px;	  
+		  margin-left: 110px;
+		}		
+
+		.education-date .date{
+				
+			font-size: 17px;
+		}	        
+
+        .tab-card h4{
+
+           font-size: 20px;
+
+        }   
+
+        .tab-card p{
+     	   
+           font-size: 14px;       
+           
+        }    
+
+
+        
+
+        footer h5{
+            
+            font-size: 15px;
+        }
+
+		.carousel-inner .carousel-item img{
+			
+			height: 300px;
+		}
 	
-}
-
-@media only screen and (max-width: 768px) {
-
-	header{
-		padding: 20px 35px;
-	}
-	
-
-	.navbar-menu, .social-media {
-        display: none;
     }
 
-    .title-first-name, .title-last-name {
-        font-size: 20px;
-    }
+		@media only screen and (max-width: 768px) {
 
-    #burger {
-        display: block; 
-        font-size: 24px;
-    }    
+	   
 
-}
-
-
+        }
 
 
 
