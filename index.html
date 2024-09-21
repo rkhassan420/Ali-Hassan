@@ -50,7 +50,7 @@
             border: 1px solid #2d2e3240;
             box-shadow: 0 0 10px 1px #00000040;
             color: #fefefe;
-            padding: 20px 55px;
+            padding: 15px 55px;
             backdrop-filter: blur(15px);
             position: sticky;
             z-index: 1;
@@ -64,6 +64,7 @@
 			display: flex;
 			justify-content: space-between;
 			background-color: transparent;
+			
 		}
 
 		.navbar-title a{
@@ -75,14 +76,14 @@
 
 			padding: 0px 7px .5px;			
 			color: #fefefe;
-			font-size: 25px;
+			font-size: 24px;
 			font-family: "Raleway", sans-serif;		
 			
 		}
 
 		.title-last-name {
   			
-  			font-size: 25px;
+  			font-size: 24px;
   			font-weight: 400;
   			color: #cacaca;
   			font-family: "Raleway", sans-serif;
@@ -90,7 +91,7 @@
 
 		.navbar-menu a{
 		
-			font-size: 13px;
+			font-size: 12px;
 			color: #fefefe;		
 			padding: 0px 20px;		
 			text-decoration: none;
@@ -109,6 +110,11 @@
             font-weight: 900;
         }
 
+        .social-media{
+
+        	margin-top: 12px;
+        }
+
 
         .social-media li {
             display: flex;
@@ -119,7 +125,7 @@
         }
 
         .social-media li i {
-            font-size: 15px;
+            font-size: 14px;
             transition: 0.3s ease;
 
         }
@@ -128,11 +134,20 @@
             color: #fefefe;
             text-decoration: none;
             padding: 0 5px;
-            font-size: 13px;
+            font-size: 12px;
             transition: 0.3s ease;
 
         }
 
+       /* .head{
+
+        	display: flex;
+        	justify-content: center;        
+        	margin-top: 25px;
+        	color: ghostwhite;
+        	
+        }
+*/
 		#burger{
 
 			display: none;
@@ -477,6 +492,7 @@
 
         footer{
             background-color: #25262a ;
+            padding: 25px;
         }
 
         footer h5{
@@ -619,7 +635,7 @@
 		.education {
 		  
 		  padding: 35px 100px;
-		  min-height: 40vh;  
+		  min-height: 20vh;  
 
 		 
 		}		
@@ -645,7 +661,9 @@
      	   
            font-size: 14px;       
            
-        }    
+        }  
+
+
 
 
         
@@ -1371,11 +1389,187 @@
 
    	}
 
+
+   	 	@media only screen and (max-width: 463px) {
+
+   	 	
+   	 	  header{
+
+			padding: 13px 35px;
+		}      
+
+        #burger {
+          
+            display: block; 
+            font-size: 20px;
+        }
+
+        .home{        	
+		    	
+		    padding: 50px 40px;	    	
+
+        }
+
+		
+        
+
+        .developer-intro p {		
+			
+		    font-size: 10px;		
+			
+		}
+		
+
+		.home-title h1{
+
+           font-size: 20px;          
+           
+        }
+     
+
+        .home-title p{
+
+           font-size: 10px;
+          
+        }
+
+        .home-title a{        
+        	
+        	font-size: 10px;           
+            
+        }
+
+         .home-tail h1{
+         	font-size: 20px;
+         }        
+
+        .home-tail p{    
+	      
+	       font-size: 10px;
+	       
+        }
+
+		
+		.home-img #homeImg{
+
+			height: 200px;
+		}
+
+
+	    .introduction {		   
+		   
+		   padding: 65px 70px;  
+		  		  
+		}
+
+	    .tab{		   
+		   
+	       min-width: 80%;
+
+	    }      
+
+
+        .tab-information{
+        	
+            min-width: 50%;
+            padding-right: 25px;
+            margin-left: -35px;          
+           
+        }       
+
+        .tab-information h2 {
+            
+            font-size: 13px;
+            
+        }
+
+        .tab-information h4 {
+ 
+            font-size: 12px;
+                       
+        }
+
+        .introduction-text p {
+  
+           font-size: 9px;
+           
+        }
+
+       .projects {
+
+		   min-height: 20vh;
+		   border: px solid white;		  
+				   	 
+		}
+
+		.projects .container h2{
+
+			font-size: 20px;
+			margin-top: -25px;
+		}
+
+		
+
+		.carousel-inner .carousel-item img{
+			
+			height: 150px;
+		}		
+
+
+		.education {
+		  
+		  padding: 30px 30px;
+		  min-height: 20vh;  
+
+		 
+		}		
+
+		.education-title h2 {
+		  
+		  font-size: 18px;	  
+		  margin-left: 50px;
+		}		
+
+		.education-date .date{
+				
+			font-size: 10px;
+		}	        
+
+        .tab-card h4{
+
+           font-size: 12px;
+
+        }   
+
+        .tab-card p{
+     	   
+           font-size: 10px;       
+           
+        } 
+
+        footer{
+        	padding: 10px;
+        }   
+
+
+
+        footer h5{
+            
+            font-size: 9px;
+
+        }
+
+		
+	
+}
+
+ 
+
    
 
 
 	</style>
-</head>
+2</head>
 <body>
 
 
@@ -1653,7 +1847,7 @@
 
 
 
-	 <footer style="padding: 25px;">
+	 <footer>
 
         <h5 style="text-align: center; color: white;">Made with ❤️ by Ali Hassan | No copyrights reserved.</h5>
 
