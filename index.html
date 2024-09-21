@@ -138,21 +138,62 @@
             transition: 0.3s ease;
 
         }
-
-       /* .head{
-
-        	display: flex;
-        	justify-content: center;        
-        	margin-top: 25px;
-        	color: ghostwhite;
-        	
-        }
-*/
+       
 		#burger{
 
 			display: none;
 			font-size: 20px;
 			cursor: pointer;
+		}
+
+		.sidebar{
+
+			border: px solid white;
+			font-family: "Source Code Pro", monospace;
+			box-shadow: 0 0 10px 1px #00000040;
+			border-radius: 12px;
+			width: 25%;
+			height: 100vh;	
+			position: fixed;
+			top: 75px;
+			right: 0;
+			padding: 25px;
+			color: #fefefe;	
+			display: none;
+
+		}
+
+
+		.sidebar li{
+			
+			list-style: none;	
+			margin-bottom: 0px;
+			padding: 10px 0px;
+			font-weight: bold;
+			font-size: 17px;
+			cursor: pointer;
+			border: px solid;
+
+		}
+
+		.sidebar a{
+
+			color: #fefefe;		
+			text-decoration: none;
+			font-weight: bold;
+
+		}
+
+		#barClose{
+
+			font-size: 25px;
+			float: right;
+			margin-bottom: 5px;
+		}
+
+		.sidebar a:hover{
+
+			color: green;
 		}
 
 
@@ -174,7 +215,6 @@
         .developer-intro{
         	display: flex;        	
         	align-items: center;
-
 
         }
 
@@ -256,10 +296,6 @@
 
 			height: 380px;
 		}
-
-
-
-
 
 	    .introduction {	       
 		   display: flex;
@@ -343,9 +379,7 @@
             min-width: 50%;
             padding-right: 35px;
             margin-top: -65px;
-            background-color: transparent;
-
-           
+            background-color: transparent;           
            
         }
 
@@ -391,15 +425,11 @@
         }
 
 
-
-
        .projects {
-		   min-height: 70vh;
-		   /* background-color: #25262a; */
+		   min-height: 70vh;		   
 		   padding: 70px;
 		   display: flex;
-		   flex-direction: row;
-		  
+		   flex-direction: row;		  
 				   	 
 		}
 
@@ -419,7 +449,6 @@
 		}
 
 		.education-title{
-
 			
 			width: 100%;
 			
@@ -458,9 +487,7 @@
 	       border-radius: 8px;
 	       box-shadow: 0 0 12px #00000060;
 	       transition: 0.5s ease;	
-	       cursor: pointer; 
-		   
-		          
+	       cursor: pointer; 		          
 	    
 	    }        
 
@@ -661,12 +688,7 @@
      	   
            font-size: 14px;       
            
-        }  
-
-
-
-
-        
+        }         
 
         footer h5{
             
@@ -679,6 +701,19 @@
 		}
 	
     }
+
+    	@media only screen and (max-width: 950px) {
+
+
+    	.sidebar{
+
+    		width: 30%;
+    	}
+
+
+    }
+
+
 
 		@media only screen and (max-width: 900px) {
 
@@ -844,6 +879,19 @@
 
     }
 
+
+    @media only screen and (max-width: 850px) {
+
+
+    	.sidebar{
+
+    		width: 33%;
+    	}
+
+
+    }
+
+   
     		@media only screen and (max-width: 768px) {
 
 
@@ -966,10 +1014,7 @@
      	   
            font-size: 12px;       
            
-        }    
-
-
-        
+        }         
 
         footer h5{
             
@@ -979,11 +1024,40 @@
 		.carousel-inner .carousel-item img{
 			
 			height: 270px;
-		}
-
-	   
+		}	   
 
     }
+
+
+     @media only screen and (max-width: 700px) {
+
+
+    	.sidebar{
+
+    		width: 37%;
+    	}
+
+
+    }
+
+
+    @media only screen and (max-width: 600px) {
+
+
+    	.sidebar{
+
+    		width: 40%;
+    	}
+    	.sidebar li{
+
+    		font-size: 15px;
+    	}
+
+
+    }
+
+
+
 
 
     	@media only screen and (max-width: 616px) {
@@ -993,8 +1067,7 @@
 		.home-img #homeImg{
 
 			height: 255px;
-		}        
-             
+		}             
 
 
         .introduction {		   
@@ -1027,11 +1100,7 @@
                    
            line-height: 18px;
           
-        }       
-
-       
-
-       
+        }        
 
        .projects {
 
@@ -1042,14 +1111,12 @@
 		.education {
 		  min-height: 30vh;
 		  		 
-		}
-			
+		}		
 
 
 		.education {
 		  
-		  padding: 20px 50px;  
-
+		  padding: 20px 50px; 
 		 
 		}		
 
@@ -1084,9 +1151,7 @@
         .tab-card{
 
         	width: 95%;
-        }  
-
-
+        } 
         
 
         footer h5{
@@ -1098,10 +1163,12 @@
 			
 			height: 270px;
 		}
-
 	   
 
     }
+
+
+    
 
    	@media only screen and (max-width: 576px) {
 
@@ -1115,15 +1182,13 @@
 
            font-size: 20px;          
            
-        }
-     
+        }     
 
        
    		.home-img #homeImg{
 
 			height: 245px;
-		}         
-
+		} 
 	   
 
 	     .tab-card h3 {
@@ -1136,8 +1201,7 @@
      	   
            font-size: 11px;       
            
-        } 
-
+        }
         
 
         .tab-card a {
@@ -1156,7 +1220,6 @@
             font-size: 14px;
                        
         }
-
         
 
          .introduction-text p {
@@ -1164,22 +1227,18 @@
                    
            line-height: 15px;
           
-        }      
-
-       
+        }          
 
        .projects {
 
-		   min-height: 25vh;
-		   	  
+		   min-height: 25vh;		   	  
 				   	 
 		}
 
 		.education {
 		  min-height: 25vh;
 		  		 
-		}
-			
+		}		
 				
 
 		.education-title h2 {
@@ -1209,10 +1268,6 @@
            
            font-size: 12px;
         } 
-
-        
-
-
         
 
         footer h5{
@@ -1224,8 +1279,6 @@
 			
 			height: 240px;
 		}
-
-
 
 
 
@@ -1243,16 +1296,13 @@
 		    	
 		    padding: 70px 40px;	    	
 
-        }		
-        
+        }	        
 
         .developer-intro p {		
 			
 		    font-size: 10px;		
 			
-		}
-
-		
+		}		
 
         .home-title p{
 
@@ -1264,15 +1314,13 @@
         	
         	font-size: 13px;           
             
-        }           
-		
+        }		
 
 		.home-title h1{
 
            font-size: 17px;          
            
-        }
-     
+        }    
 
        
    		.home-img #homeImg{
@@ -1314,7 +1362,6 @@
             font-size: 11px;
                        
         }
-
         
 
          .introduction-text p {
@@ -1322,15 +1369,11 @@
                    
            line-height: 13px;
            font-size: 11px;                   
-          
-        }      
-
-       
+        }        
 
        .projects {
 
-		   min-height: 25vh;
-		   	  
+		   min-height: 25vh;		   	  
 				   	 
 		}
 
@@ -1367,10 +1410,6 @@
            
            font-size: 12px;
         } 
-
-        
-
-
         
 
         footer h5{
@@ -1383,11 +1422,25 @@
 			height: 200px;
 		}
 
-
-
-
-
    	}
+
+   	 @media only screen and (max-width: 532px) {
+
+
+    	.sidebar{
+
+    		width: 45%;
+    		top: 60px;
+    	}
+    	.sidebar li{
+
+    		font-size: 13px;
+    	}
+
+
+    }
+
+    
 
 
    	 	@media only screen and (max-width: 463px) {
@@ -1408,24 +1461,20 @@
 		    	
 		    padding: 50px 40px;	    	
 
-        }
-
-		
+        }	
         
 
         .developer-intro p {		
 			
 		    font-size: 10px;		
 			
-		}
-		
+		}		
 
 		.home-title h1{
 
            font-size: 20px;          
            
-        }
-     
+        }     
 
         .home-title p{
 
@@ -1506,9 +1555,7 @@
 
 			font-size: 20px;
 			margin-top: -25px;
-		}
-
-		
+		}		
 
 		.carousel-inner .carousel-item img{
 			
@@ -1519,8 +1566,7 @@
 		.education {
 		  
 		  padding: 30px 30px;
-		  min-height: 20vh;  
-
+		  min-height: 20vh;
 		 
 		}		
 
@@ -1549,19 +1595,29 @@
 
         footer{
         	padding: 10px;
-        }   
-
-
+        }
 
         footer h5{
             
             font-size: 9px;
 
         }
-
 		
 	
-}	
+}
+
+
+ @media only screen and (max-width: 435px) {
+
+
+    	.sidebar{
+
+    		width: 50%;
+    		
+    	}
+
+
+    }	
 
   	 	@media only screen and (max-width: 420px) {
 
@@ -1573,15 +1629,14 @@
 
         .home{        	
 		    	
-		    padding: 40px 35px;	    	
+		    padding: 40px 35px;	   	
 
         }	
         
 
         .developer-intro p {		
 			
-		    font-size: 9px;		
-			
+		    font-size: 9px;				
 		}
 		
 
@@ -1726,6 +1781,18 @@
 		
 	
 }
+
+ @media only screen and (max-width: 400px) {
+
+
+    	.sidebar{
+
+    		width: 55%;
+    		
+    	}
+
+
+    }
 
 
  	 	@media only screen and (max-width: 390px) {   	 	
@@ -1904,7 +1971,7 @@
 
 		.navbar-title{
 
-			border: 1px solid;
+			border: px solid;
 			margin-top: 5px;
 		}	   
 
@@ -1998,17 +2065,12 @@
             font-size: 8px;
             margin-bottom: -4px;
 
-        }
-
-		
+        }		
 	
-}
- 
-
-   
+}   
 
 
-	</style>
+</style>
 </head>
 <body>
 
@@ -2067,10 +2129,57 @@
 	                
 	            </ul>
 
-				<i class="fa-solid fa-bars" style="color: #e9eef1";  id="burger" ></i>
+				<i class="fa-solid fa-bars" style="color: #e9eef1";  id="burger" onclick="showSidebar()"></i>
 
 	        </div>
     </header>
+
+    <div class="sidebar">
+
+			<ul>
+
+				<li>
+				 	<i class="fa-solid fa-xmark" style="color: #fcfcfc;" id="barClose" onclick="hideSidebar()"></i>
+				</li>
+				
+
+				<li>
+					<a class="" href="../../projects.html">Projects</a>
+				</li>
+
+				<li>
+					<a class="" href="../../index.html#education">Education</a>
+				</li>
+
+				<li>
+					<a class="" href="../../assets/cv.pdf" target="main">Resume</a>	
+				</li>
+
+				<li>
+					<i class="fa-brands fa-linkedin-in"></i>
+					<a href="https://www.linkedin.com/in/ali-hassan-168446211/" target="_blank">LinkedIn</a>
+				</li>
+
+				<li>
+					<i class="fa-brands fa-github"></i>
+					<a href="https://github.com/rkhassan420" target="_blank">Github</a>
+				</li>
+				
+
+				<li>
+					<i class="fa-regular fa-envelope"></i>
+					<a href="mailto:mrkhan111243@gmail.com" target="_blank">Email</a>
+				</li>
+
+				<li>
+					<i class="fa-brands fa-whatsapp"></i>
+					<a aria-label="Chat on WhatsApp" href="https://wa.me/923245396002" target="_blank">WhatsApp</a>
+
+				</li>
+				
+		</ul>			
+		
+	</div>
 
 
     <div class="home">
@@ -2187,16 +2296,16 @@
               <div class="carousel-inner" >
 
 				<div class="carousel-item active" >
-				<abbr title="click to open Github Pages"><a href="https://rkhassan420.github.io/Food-system/" target="_blank"> <img src="projects/food_ordering_system/1.png" class="d-block "  alt="Food System"></a></abbr>
+				<abbr title="click to open Github Pages"><a href="https://rkhassan420.github.io/Food-system/" target="_blank"> <img src="assets/1.png" class="d-block "  alt="Food System"></a></abbr>
 				</div>
                 
 
                 <div class="carousel-item" >
-				<abbr title="click to open Github Pages"> <a href="https://rkhassan420.github.io/cloth_system/" target="_blank"> <img src="projects/cloth_store_system/1.png" class="d-block "  alt="Cloth System"></a></abbr>
+				<abbr title="click to open Github Pages"> <a href="https://rkhassan420.github.io/cloth_system/" target="_blank"> <img src="assets/2.png" class="d-block "  alt="Cloth System"></a></abbr>
                 </div>
 
                 <div class="carousel-item">
-				<abbr title="click to open Github Pages"> <a href="https://rkhassan420.github.io/Chat-Application/" target="_blank"> <img src="projects/chat_application/1.png" class="d-block"  style="text-align: center;" alt="Chat Web Application"></a></abbr>
+				<abbr title="click to open Github Pages"> <a href="https://rkhassan420.github.io/Chat-Application/" target="_blank"> <img src="assets/3.png" class="d-block"  style="text-align: center;" alt="Chat Web Application"></a></abbr>
                 </div>
 
               </div>
@@ -2333,9 +2442,9 @@
 
 
   </script>
-    
 
+  <script src="./js/sidebar.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
